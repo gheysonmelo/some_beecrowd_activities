@@ -1,0 +1,9 @@
+var input = require('fs').readFileSync('stdin', 'utf8');
+var lines = input.split('\n');
+
+var A = parseFloat(lines[0]);
+var B = parseFloat(lines[1]);
+
+var MEDIA = ((3.5*A)+(7.5*B))/11;
+
+console.log(`MEDIA = ${MEDIA.toFixed(5)}`);
